@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Roboto&display=swap");
+
+html {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  background-color: #f2ebe3;
+}
+
+.container {
+  border-radius: 10px;
+  height: 530px;
+  width: 300px;
+  overflow: hidden;
+  color: #6c7289;
+}
+.img-preview {
+  height: 35%;
+  width: 100%;
+  background: url("./images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-details {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.container h3 {
+  margin-top: 10px;
+  font-family: "Fraunces", serif;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #1c232b;
+}
+.product-details p {
+  line-height: 20px;
+}
+.container .prices {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: "Fraunces", serif;
+  display: flex;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #3c8067;
+}
+
+.container .prices span{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 8px;
+    text-decoration: line-through;
+    color: #6c7289;
+    
+}
+.container small {
+  letter-spacing: 4px;
+}
+.container button{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: none;
+    border: none;
+    font-weight: 700;
+    background-color: #3c8067;
+    color: #fff;
+}
+.container button img{
+    margin-right: 5px;
+}
+
+.container button:active,.container button:focus{
+    outline: none;
+}
+
+.container button:hover{
+    cursor: pointer;
+    background-color: #265242;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 500px;
+        height: 400px;
+        display: flex;
+    }
+    .img-preview{
+        background: url('./images/image-product-desktop.jpg');
+        width: 50%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    .product-details{
+        width: 50%;
+        height: 100%;
+    }
+}
